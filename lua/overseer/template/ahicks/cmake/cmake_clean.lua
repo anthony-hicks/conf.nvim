@@ -14,7 +14,8 @@ return {
           open_height = 8,
         },
         {
-          "ahicks.on_success_close_quickfix",
+          "ahicks.quickfix",
+          close = "success",
         },
       },
     }
