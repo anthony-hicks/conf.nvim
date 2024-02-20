@@ -16,6 +16,7 @@
 
 local which_key = require("which-key")
 which_key.register({
+  ["<leader>n"] = { name = "+Neorg" },
   ["<leader>o"] = { name = "+Overseer" },
   ["<leader>ot"] = { name = "+Task" },
 })
