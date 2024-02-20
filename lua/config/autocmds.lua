@@ -4,7 +4,7 @@
 
 -- Disable autoformat for C/C++ files
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = { "*.h", "*.hpp", "*.c", "*.cpp", "*.cc" },
+  pattern = { "c", "cpp" },
   callback = function()
     vim.b.autoformat = false
   end,
