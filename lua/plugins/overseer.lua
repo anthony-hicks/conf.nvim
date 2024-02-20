@@ -5,6 +5,7 @@ return {
       "builtin",
       "ahicks.cmake",
       "ahicks.build",
+      "ahicks.test",
       "ahicks.clean",
     },
   },

@@ -33,6 +33,13 @@ vim.keymap.set("n", "gb", function()
   })
 end, { desc = "[C++] Build Project" })
 
+-- Run unit tests
+vim.keymap.set("n", "gt", function()
+  overseer.run_template({
+    name = "Run unit tests",
+  })
+end, { desc = "[C++] Run unit tests" })
+
 -- Open Overseer
 vim.keymap.set("n", "<leader>oo", function()
   vim.cmd("OverseerToggle")
