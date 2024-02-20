@@ -4,7 +4,8 @@ return {
     templates = {
       "builtin",
       "ahicks.cmake",
-      "ahicks.build"
+      "ahicks.build",
+      "ahicks.clean",
     },
   },
 }

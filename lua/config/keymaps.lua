@@ -49,7 +49,7 @@ end, { desc = "[O]verseer [S]top" })
 -- Clean
 vim.keymap.set("n", "<leader>otc", function()
   overseer.run_template({
-    name = "make realclean",
+    name = "Clean Project",
   })
 end, { desc = "[O]verseer [T]ask [C]lean" })
 
