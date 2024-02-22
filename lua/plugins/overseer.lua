@@ -7,6 +7,7 @@ return {
       "ahicks.build",
       "ahicks.test",
       "ahicks.clean",
+      "ahicks.cppcheck",
     },
   },
 }

@@ -19,6 +19,7 @@ which_key.register({
   ["<leader>n"] = { name = "+Neorg" },
   ["<leader>o"] = { name = "+Overseer" },
   ["<leader>ot"] = { name = "+Task" },
+  ["<leader>ots"] = { name = "+Static analysis" },
 })
 
 local overseer = require("overseer")
