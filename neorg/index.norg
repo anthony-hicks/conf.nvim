@@ -1,4 +1,6 @@
 * nvim
+** `gc` should use // not /* */
+
 ** Theme
    - must support highlight groups
    - must be different colors: params, locals, members
