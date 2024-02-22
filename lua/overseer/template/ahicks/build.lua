@@ -26,19 +26,19 @@ return {
       components = {
         "default",
         {
-          "ahicks.on_start_close_trouble",
-        },
-        {
           "on_output_quickfix",
           open = true,
           open_height = 12,
         },
         {
-          "ahicks.quickfix",
-          close = "always",
+          "ahicks.trouble",
+          close_on_start = true,
+          open_on_status = "failure",
+          open_first_item = true,
         },
         {
-          "ahicks.on_failure_open_trouble",
+          "ahicks.quickfix",
+          close_on_status = "always",
         },
       },
     }

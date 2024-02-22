@@ -14,10 +14,14 @@ return {
           open_height = 8,
         },
         {
-          "ahicks.on_complete_close_quickfix",
+          "ahicks.quickfix",
+          close_on_status = "always",
         },
         {
-          "ahicks.on_failure_open_trouble",
+          "ahicks.trouble",
+          close_on_start = true,
+          open_on_status = "failure",
+          open_first_item = true,
         },
       },
     }

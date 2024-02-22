@@ -15,7 +15,7 @@ return {
         },
         {
           "ahicks.quickfix",
-          close = "success",
+          close_on_status = "success",
         },
       },
     }
