@@ -1,5 +1,6 @@
 return {
   "nvim-neorg/neorg",
+  lazy = false,
   build = ":Neorg sync-parsers",
   dependencies = { "nvim-lua/plenary.nvim" },
   config = function()
@@ -23,6 +24,6 @@ return {
     vim.wo.conceallevel = 2
   end,
   keys = {
-    { "<leader>nn", "<cmd>Neorg workspace todo<CR>", desc = "Open workspace: todo" }
+    { "<leader>nn", "<cmd>Neorg workspace todo<CR>", desc = "Open workspace: todo" },
   }
 }
