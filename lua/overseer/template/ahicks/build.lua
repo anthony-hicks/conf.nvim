@@ -7,12 +7,22 @@ return {
       type = "enum",
       choices = { "Debug", "Release" },
     },
+    sanitizer = {
+      name = "Sanitizer",
+      type = "enum",
+      choices = { "ASan", "UBSan", "TSan" },
+      optional = true,
+    },
   },
   builder = function(params)
     local args = { "-j" }
 
     if params.build_type == "Debug" then
       table.insert(args, "DEBUG=1")
+    end
+
+    if params.sanitizer then
+      table.insert(args, string.upper(params.sanitizer) .. "=1")
     end
 
     ---@type overseer.TaskDefinition
