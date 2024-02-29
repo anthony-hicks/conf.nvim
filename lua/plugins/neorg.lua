@@ -25,5 +25,7 @@ return {
   end,
   keys = {
     { "<leader>nn", "<cmd>Neorg workspace todo<CR>", desc = "Open workspace: todo" },
-  }
+    { "<leader>nt", "<cmd>Neorg journal today<CR>", desc = "Journal: today" },
+    { "<leader>ny", "<cmd>Neorg journal yesterday<CR>", desc = "Journal: yesterday" },
+  },
 }
