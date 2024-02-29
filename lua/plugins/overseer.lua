@@ -3,11 +3,13 @@ return {
   opts = {
     templates = {
       "builtin",
-      "ahicks.cmake",
+
+      "ahicks.bear",
       "ahicks.build",
-      "ahicks.test",
       "ahicks.clean",
+      "ahicks.cmake",
       "ahicks.cppcheck",
+      "ahicks.test",
     },
   },
 }
