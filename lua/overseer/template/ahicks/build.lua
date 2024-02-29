@@ -13,6 +13,10 @@ return {
       choices = { "ASan", "UBSan", "TSan" },
       optional = true,
     },
+    args = {
+      name = "Args",
+      optional = true,
+    },
   },
   builder = function(params)
     local args = { "-j" }
@@ -23,6 +27,10 @@ return {
 
     if params.sanitizer then
       table.insert(args, string.upper(params.sanitizer) .. "=1")
+    end
+
+    if params.args then
+      table.insert(args, params.args)
     end
 
     ---@type overseer.TaskDefinition
@@ -44,7 +52,7 @@ return {
           "ahicks.trouble",
           close_on_start = true,
           open_on_status = "failure",
-          open_first_item = true,
+          open_first_item = false, -- Temporary until we fix the categorization problem
         },
         {
           "ahicks.quickfix",
