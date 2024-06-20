@@ -5,7 +5,7 @@ return {
     ---@type overseer.TaskDefinition
     return {
       cmd = { "make" },
-      args = { "realclean" },
+      args = { "clean" },
       components = {
         "default",
         {

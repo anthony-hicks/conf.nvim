@@ -5,7 +5,7 @@ return {
     build_type = {
       name = "Build Type",
       type = "enum",
-      choices = { "Debug", "Release" },
+      choices = { "Debug", "Release", "RelWithDebInfo" },
     },
     sanitizer = {
       name = "Sanitizer",
@@ -19,14 +19,14 @@ return {
     },
   },
   builder = function(params)
-    local args = { "-j" }
-
-    if params.build_type == "Debug" then
-      table.insert(args, "DEBUG=1")
-    end
+    local args = {}
 
     if params.sanitizer then
-      table.insert(args, string.upper(params.sanitizer) .. "=1")
+      table.insert(args, string.lower(params.sanitizer))
+    end
+
+    if params.build_type then
+      table.insert(args, "CMAKE_BUILD_TYPE=" .. params.build_type)
     end
 
     if params.args then
