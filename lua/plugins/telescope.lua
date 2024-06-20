@@ -2,11 +2,16 @@ local builtin = require("telescope.builtin")
 
 return {
   "nvim-telescope/telescope.nvim",
-  -- opts = {
-  --   defaults = {
-  --     layout_strategy = "vertical",
-  --   },
-  -- },
+  opts = {
+    defaults = {
+      layout_strategy = "vertical",
+      layout_config = {
+        vertical = {
+          width = 0.5,
+        },
+      },
+    },
+  },
   keys = {
     {
       "<leader>ss",
