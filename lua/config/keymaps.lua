@@ -15,11 +15,11 @@
 -- vim.keymap.set("n", "<C-d>", "<C-d>zz")
 
 local which_key = require("which-key")
-which_key.register({
-  ["<leader>n"] = { name = "+Neorg" },
-  ["<leader>o"] = { name = "+Overseer" },
-  ["<leader>ot"] = { name = "+Task" },
-  ["<leader>ots"] = { name = "+Static analysis" },
+which_key.add({
+  { "<leader>j", group = "Journal" },
+  { "<leader>o", group = "Overseer" },
+  { "<leader>ot", group = "Task" },
+  { "<leader>ots", group = "Static analysis" },
 })
 
 local overseer = require("overseer")
