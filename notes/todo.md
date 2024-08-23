@@ -1,4 +1,8 @@
-* nvim
+# todo
+
+Convert this file to .md from .norg format.
+
+## nvim
 ** treesitter context should include any scope, specifically lambdas
    I was in the body of a lambda being passed to std::thread constructor and it would
    be  nice to see that context.
