@@ -6,4 +6,4 @@ vim.opt.wrap = true
 vim.opt.colorcolumn = "88"
 
 -- Show filename even when buffer not focused
-vim.opt.winbar = "%=%m %f"
+-- vim.opt.winbar = "%=%m %f"
