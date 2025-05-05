@@ -10,12 +10,14 @@
 
 -- User
 
+-- Zen mode
+vim.keymap.set("n", "<leader>z", ":NoNeckPain<CR>", { noremap = true, silent = true })
+
 -- (primeagen) Center on vertical movement
 -- vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- vim.keymap.set("n", "<C-d>", "<C-d>zz")
 
-local which_key = require("which-key")
-which_key.add({
+require("which-key").add({
   { "<leader>j", group = "Journal" },
   { "<leader>o", group = "Overseer" },
   { "<leader>ot", group = "Task" },
