@@ -3,4 +3,7 @@ return {
   -- to jump to a search result was the same key I wanted to search next
   { "folke/flash.nvim", enabled = false },
   { "folke/noice.nvim", enabled = false },
+
+  -- disable tabbar, too distracting
+  { "akinsho/bufferline.nvim", enabled = false },
 }
